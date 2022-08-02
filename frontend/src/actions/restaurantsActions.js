@@ -47,3 +47,28 @@ export const allRestaurants = () => async (dispatch) => {
             })
       }
 }
+
+
+export const getRestDetails = (id) => async (dispatch, getState) => {
+    try {
+          dispatch({
+                type: REST_BYID_REQUEST,
+          })
+
+          const { data } = await axios.get(`/api/restaurents/${id}`)
+
+          dispatch({
+                type: REST_BYID_SUCCESS,
+                payload: data
+          })
+
+    } catch (error) {
+          dispatch({
+                type: REST_BYID_FAIL,
+                payload:
+                      error.response && error.response.data.message
+                            ? error.response.data.message
+                            : error.message,
+          })
+    }
+}
