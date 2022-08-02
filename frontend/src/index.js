@@ -29,3 +29,39 @@ const getRestaurantById = asyncHandler(async (req, res) => {
     }
   
   })
+
+  const createRestaurant = asyncHandler(async (req, res) => {
+    const {
+      name,
+      type,
+      tables,
+      phoneNo,
+      email,
+      location,
+      image1,
+      image2,
+      image3,
+      description
+    } = req.body
+  
+    const newrest = new Restaurent({
+      name,
+      type,
+      tables,
+      phoneNo,
+      email,
+      location,
+      images:
+        [image1,
+          image2,
+          image3],
+      description
+  
+    })
+    try {
+      await newrest.save()
+      res.send('New Restaurant Added Successfully')
+    } catch (error) {
+      return res.status(400).json({ error });
+    }
+  })
