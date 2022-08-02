@@ -170,6 +170,9 @@ export const filterRestaurants = (searchkey,type) => async dispatch => {
           const response = await axios.get('/api/restaurents/')
           filteredRest = response.data.filter(restaurant => restaurant.name.toLowerCase().includes(searchkey))
 
+          if (type != 'all') {
+                filteredRest = response.data.filter(restaurant => restaurant.type.toLowerCase()==type)
+          }
 
           dispatch({ type: REST_ALL_SUCCESS, payload: filteredRest })
     } catch (error) {
