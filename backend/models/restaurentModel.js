@@ -36,7 +36,6 @@ const restaurentSchema = mongoose.Schema({
     timestamps: true
 })
 
-// const Restaurent = mongoose.model('restaurent', restaurentSchema)
-const Restaurent = mongoose.model('restaurant', restaurentSchema)
+const Restaurent = mongoose.model('restaurent', restaurentSchema)
 
 export default Restaurent
