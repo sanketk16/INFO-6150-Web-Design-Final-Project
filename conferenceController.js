@@ -48,9 +48,9 @@ const getConDetailsById = asyncHandler(async (req, res) => {
             conFeatures:  conference.conFeatures,
                 
           })
-//    } else {
-//          res.status(404)
-//          throw new Error('Invalid Conference room data')
+    } else {
+          res.status(404)
+          throw new Error('Invalid Conference room data')
     }
 })
 
