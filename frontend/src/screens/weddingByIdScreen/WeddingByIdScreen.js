@@ -71,34 +71,23 @@ const WeddingByIdScreen = ({ match, history }) => {
                                                       <br/>
                                                             <div class="vl">
                                                                  <div className="hk">
-                                                                  <h6 > Grand Hotel </h6>
+                                                                  <h6 > Bistro Hotel </h6>
                                                                   <h1 > {weddings.wedHallName}</h1>
                                                                   </div>
                                                             </div>            <hr></hr>
 
-                                                            <h6>Amenities</h6>
                                                             <hr></hr>
-                                                            <h6>Wedding Hall Description</h6>
                                                             <p>{weddings.wedDes}</p>
                                                             <br/>
-                                                            <h6>Number of Seats</h6>
-                                                            <ul class="b">
-                                                                  <p>{weddings.wedSeats} Seats</p>
-                                                            </ul>
-
+                                                            <h6>Seat Strength: </h6> <p>{weddings.wedSeats} Seats</p>
                                                       </Col>
 
 
-                                                      <Col >
-                                                            <p className='km'>
-                                                                  <b>For More Information, please call (+94) 76 666 3881</b></p>
-                                                            
-                                                                  <ListGroup as="ul" align="center">
-                                                                  <ListGroup.Item as="li" variant="secondary">
-                                                                        <b>Request a Proposal</b>
-                                                                  </ListGroup.Item>
-                                                                  <ListGroup.Item as="li" disabled><p>Complete a simple form to let us know your event requirements and leave the planning to us. </p></ListGroup.Item>
-                                                                  <ListGroup.Item><LinkContainer to='/requestPropsal'><button type="button" class="btn btn-warning">Request a Proposal</button></LinkContainer></ListGroup.Item>
+                                                      <Col className='form-fill'>                                                            
+                                                            <ListGroup as="ul">
+                                                                  <ListGroup.Item as="li" variant="secondary"></ListGroup.Item>
+                                                                  <ListGroup.Item as="li" disabled><p>Please fill out the form so that we receive your event requirements</p></ListGroup.Item>
+                                                                  <ListGroup.Item><LinkContainer to='/requestPropsal'><button type="button" className='submit'>Click Here</button></LinkContainer></ListGroup.Item>
                                                             </ListGroup>
                                                       </Col>
                                                 </Row>

@@ -1,11 +1,4 @@
-.bx {
-    box-sizing: border-box;
-    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-      rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-    margin-top: 10px !important;
-    border-radius: 5px !important;
-    padding: 10px !important;
-  }
+
   
   .container {
     padding-top: 50px;
@@ -26,15 +19,29 @@
   .ah {
     padding-top: 20px;
   }
+
   .nk {
     padding-left: 30%;
     padding-top: -2px;
   }
+
   .kp {
     padding-top: 10%;
     padding-left: 35%;
   }
+
   .hk {
     padding-left: 10px;
   }
-  
+
+  .submit {
+    border-radius: 10px!important;
+    color: rgb(61, 38, 10)!important;
+    margin-left: 200px;
+  }
+
+  .form-fill {
+    padding-top: 90px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    font-size: medium;
+  }
