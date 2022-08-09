@@ -17,7 +17,7 @@ import {
     REST_UPDATE_FAIL,
     REST_UPDATE_RESET
 
-} from '../constants/restaurentsConstants'
+} from '../constants/restaurantConstants'
 
 
 export const restAllReducer = (state = { restaurants: [] }, action) => {
