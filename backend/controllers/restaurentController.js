@@ -8,6 +8,28 @@ const getRestaurents = asyncHandler(async (req, res) => {
 })
 
 
+const getRestaurantById = asyncHandler(async (req, res) => {
+  const restaurant = await Restaurent.findById(req.params.id)
+
+  if (restaurant) {
+    res.json({
+      _id: restaurant._id,
+      name: restaurant.name,
+      type: restaurant.type,
+      tables: restaurant.tables,
+      phoneNo: restaurant.phoneNo,
+      email: restaurant.email,
+      location: restaurant.location,
+      images: restaurant.images,
+      description: restaurant.description,
+    })
+
+  } else {
+    res.status(404)
+    throw new Error('Restaurant not found')
+  }
+
+})
 
 const createRestaurant = asyncHandler(async (req, res) => {
   const {
