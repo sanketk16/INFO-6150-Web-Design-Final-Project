@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 import { getRestDetails, updateRestaurantDetails } from '../../actions/restaurantsActions'
-import { REST_UPDATE_RESET } from '../../constants/restaurentsConstants'
+import { REST_UPDATE_RESET } from '../../constants/restaurantConstants'
 
 
 const RestaurantUpdateScreen = ({ match, history }) => {
