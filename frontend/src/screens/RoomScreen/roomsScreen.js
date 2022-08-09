@@ -9,7 +9,7 @@ import { DatePicker, Space } from "antd";
 import 'antd/dist/antd.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import RoomsCarousel from '../../components/RoomsCorousel/roomsCarousel'
+import RoomsCarousel from '../../components/RoomsCarousel/roomsCarousel'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 
