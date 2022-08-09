@@ -15,7 +15,7 @@ const LandingScreen = () => {
                   <div className="landing row justify-content-center text-center bg-image">
                         <div className="col-md-9 my-auto">
                               <h2 style={{ color: "white", fontSize: "130px" }} data-aos='zoom-in'>Bistro Hotel</h2>
-                              <h1 style={{ color: "white" }} data-aos='zoom-out' >Experience the best lounge and dining facilities</h1>
+                              <h1 data-aos='zoom-out' >Experience the best lounge and dining facilities ..</h1>
                               {/* <Link to="/homescreen">
                                     <button className='btn btn-outline-warning'>Find out more..</button>
                               </Link> */}
