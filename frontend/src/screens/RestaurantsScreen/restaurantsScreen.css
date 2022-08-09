@@ -1,0 +1,26 @@
+.heading {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 470;
+}
+
+.restaurant_list {
+  height: 100%;
+}
+
+.ro {
+    margin-left: 74px;
+    margin-right: 74px;
+  }
+  .lo {
+    margin-top: 73px;
+  }
+  .nm {
+    width: 100%;
+  }
+  .mj {
+    width: 96%;
+  }
+  .link {
+    color: black;
+  }

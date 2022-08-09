@@ -1,0 +1,31 @@
+.ty {
+      border-left: 10px solid rgba(53, 53, 53, 0.692);
+      height: 50px;
+      position: flex;
+      left: 15%;
+      margin-left: 13px;
+}
+
+.nav_bar {
+  background-color: black;
+  font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+}
+
+.header {
+  background-color: rgb(230, 245, 245);
+  color: black;
+}
+
+.bistro_brand {
+  display: inline;
+  color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: black;
+}

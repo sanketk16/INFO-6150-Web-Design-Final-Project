@@ -1,0 +1,9 @@
+.login,
+.image {
+  min-height: 100vh;
+}
+.bg-image {
+  background-image: url('https://cdn.pixabay.com/photo/2019/07/08/04/23/traveling-4323759_960_720.png');
+  background-size: cover;
+  background-position: 100% 35%;
+}
