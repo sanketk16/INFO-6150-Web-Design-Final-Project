@@ -2,7 +2,7 @@ import React from 'react'
 import { Tabs } from "antd";
 import { Button, Row, Col } from 'react-bootstrap'
 import RestaurentList from '../AllRestaurant/restaurantTable'
-import AddRestaurant from '../RestaurantCreate/restCreate'
+import AddRestaurant from '../RestaurantAdd/restaurantAdd'
 import TableBookings from '../TableBookingListScreen/tableBookinglistScreen'
 import ReservationReport from '../RestaurantTableBookingReport/ReservationReport'
 import { Container } from 'react-bootstrap';
