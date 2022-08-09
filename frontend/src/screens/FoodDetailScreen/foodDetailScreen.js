@@ -116,17 +116,6 @@ const FoodDetail = ({ match, history }) => {
 
                             <Row>
                                 <Col md={7}>
-                                    {/* <ListGroup variant='flush'>
-                                        <div className='fg'>
-                                            <ListGroup.Item>
-                                                <h3>{foods.name}</h3>
-                                            </ListGroup.Item>
-                                        </div>
-                                        <ListGroup.Item>Price: LKR {foods.price}</ListGroup.Item>
-                                        <ListGroup.Item>
-                                            Description: {foods.description}
-                                        </ListGroup.Item>
-                                    </ListGroup> */}
 
                                     <br></br>
                                     <div class="fg">
@@ -137,7 +126,7 @@ const FoodDetail = ({ match, history }) => {
                                     </div>
                                     <hr></hr>
 
-                                    <h6>LKR {foods.price}.00</h6>
+                                    <h6>USD {foods.price}.00</h6>
                                     <h6>Description</h6>
                                     <p>{foods.description}</p>
                                 </Col>

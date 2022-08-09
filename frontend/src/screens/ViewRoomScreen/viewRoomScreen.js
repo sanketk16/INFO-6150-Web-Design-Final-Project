@@ -118,7 +118,7 @@ const ViewRoomScreen = ({ match, history }) => {
                                                                   <ListGroup.Item as="li" disabled>
                                                                         <b>Room Type: </b> {rooms.type}
                                                                   </ListGroup.Item>
-                                                                  <ListGroup.Item as="li" disabled >From <b>LKR {rooms.rentperday}/= </b>Average Per Night</ListGroup.Item>
+                                                                  <ListGroup.Item as="li" disabled >From <b>USD {rooms.rentperday}/= </b>Average Per Night</ListGroup.Item>
                                                             </ListGroup>
                                                       </Col>
                                                 </Row>
