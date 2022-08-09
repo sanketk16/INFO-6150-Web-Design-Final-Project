@@ -1,1 +1,1 @@
-# Repository for bistro-lounge
+# Repository for INFO 6150 Final Project
