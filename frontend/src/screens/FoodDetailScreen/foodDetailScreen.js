@@ -72,7 +72,7 @@ const FoodDetail = ({ match, history }) => {
                                                 <Row>
                                                     <Col>Price:</Col>
                                                     <Col>
-                                                        <strong>LKR {foods.price}.00</strong>
+                                                        <strong>USD {foods.price}.00</strong>
                                                     </Col>
                                                 </Row>
                                             </ListGroup.Item>
