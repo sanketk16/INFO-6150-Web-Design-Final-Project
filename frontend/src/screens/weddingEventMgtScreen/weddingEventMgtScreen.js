@@ -19,13 +19,13 @@ const WedEventMgtScreen = () => {
                       <h2 className="text-center m-2" style={{ fontSize: "35px" }}>WEDDING & CONFERENCE MANAGEMENT</h2>
 
                       <Tabs defaultActiveKey="1">
-                            <TabPane tab="WEDDING HALL LIST" key="1">
+                            <TabPane tab="Event Hall List" key="1">
                                   <div className="row">
                                         <WeddingListScreen />
 
                                   </div>
                             </TabPane>
-                            <TabPane tab="INSERT WEDDING HALL DETAILS" key="2">
+                            <TabPane tab="Add new hall" key="2">
 
                                   <div className="row">
                                         <SignupScreen />
@@ -33,29 +33,7 @@ const WedEventMgtScreen = () => {
 
                             </TabPane>
 
-
-                            {/* <TabPane tab="CONFERENCE ROOM LIST" key="3">
-                                  <div className="row">
-                                        <ConferenceListScreen />
-
-                                  </div>
-                            </TabPane>
-
-                            <TabPane tab="INSERT CONFERENCE ROOM DETAILS" key="4">
-                                <div className="row">
-                                        <ConInsertScreen />
-                                  </div>
-
-                            </TabPane>
-                            
-                            <TabPane tab="CONFERENCE ROOM REPORT" key="5">
-                                  <div className="row">
-                                        <ConferenceReport/>
-
-                                  </div>
-                            </TabPane> */}
-
-                            <TabPane tab="WEDDING HALL REPORT" key="6">
+                            <TabPane tab="Available hall list report" key="6">
                                   <div className="row">
                                         <WeddingReport/>
 
