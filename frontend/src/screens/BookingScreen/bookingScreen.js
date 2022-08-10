@@ -52,12 +52,12 @@ const BookingScreen = ({ match }) => {
 
                   const result = await axios.post('/api/booking/bookroom', bookingDetails)
                   console.log(result)
-                  Swal.fire('Congrats', 'Your Room has booked succeessfully', 'success').then(result => {
+                  Swal.fire('SUCCESS', 'Room has been booked.', 'success').then(result => {
                         window.location.href = '/rooms'
                   })
 
             } catch (error) {
-                  Swal.fire('Oops', 'Something went wrong , please try later', 'error')
+                  Swal.fire('Oops', 'Something went wrong , please try again.', 'error')
                   console.log(error);
 
             }
@@ -124,31 +124,6 @@ const BookingScreen = ({ match }) => {
                                                                               <li>{rooms.features4}</li>
                                                                               <li>{rooms.features5}</li>
                                                                         </ul>
-                                                                        {/* <h6>Bath & Per sonal Care</h6>
-                                                                        <ul class="b">
-                                                                              <li>Walk-in shower and/or separate bathtub</li>
-                                                                              <li>Bathroom mirror</li>
-                                                                              <li>Plush bathrobes and slippers</li>
-                                                                              <li>300 thread count linen</li>
-                                                                              <li>Pillow menu with hypoallergenic options</li>
-                                                                              <li>Iron and ironing board</li>
-                                                                        </ul> */}
-
-                                                                        {/* <h6>Media & Entertainment</h6>
-                                                                        <ul class="b">
-                                                                              <li>High-speed Internet access</li>
-                                                                              <li>Flatscreen TV</li>
-                                                                              <li>Wide selection of international and local television channels</li>
-                                                                        </ul> */}
-
-                                                                        {/* <h6>Refreshments</h6>
-                                                                        <ul class="b">
-                                                                              <li>Minibar</li>
-                                                                              <li>Water</li>
-                                                                              <li>Tea and coffee making facilities</li>
-                                                                        </ul> */}
-
-
 
                                                                   </Col>
 
@@ -156,12 +131,6 @@ const BookingScreen = ({ match }) => {
                                                                   <Col >
                                                                         
                                                                         <ListGroup as="ul" align="center">
-                                                                              {/* <ListGroup.Item as="li" variant="secondary">
-                                                                                    <b>Details</b>
-                                                                              </ListGroup.Item> */}
-                                                                              {/* <ListGroup.Item as="li" disabled>
-                                                                                    <p><b>Customer: </b> {JSON.parse(localStorage.getItem('userInfo')).name}</p>
-                                                                              </ListGroup.Item> */}
                                                                               <ListGroup.Item as="li" disabled><b>Suitable for: </b> {rooms.maxcount} person</ListGroup.Item>
                                                                               <ListGroup.Item as="li" disabled>
                                                                                     <b>Room Type: </b> {rooms.type}
@@ -182,18 +151,6 @@ const BookingScreen = ({ match }) => {
 
                                                                               <ListGroup.Item as="li" disabled ><b>Total Amount:</b> USD {rooms.rentperday * totalDays}</ListGroup.Item>
 
-                                                                              {/* <StripeCheckout Checkout
-                                                                                    amount={rooms.rentperday * totalDays * 100}
-                                                                                    shippingAddress
-                                                                                    token={tokenHander}
-                                                                                    stripeKey='pk_test_51JPWGjSI37Hyu4LS14ggmcl7QaBe64PshUwoHcOqfMgFrpRqT2jmYQ2VpskMdLGcKUkROnXRy8YZ87FfkEJMSVcw00Os62ys8R'
-                                                                                    currency='USD'
-                                                                              >
-
-                                                                                    <ListGroup.Item as="li" disabled > <button className='btn btn-outline-warning'>Pay Total</button></ListGroup.Item>
-
-                                                                              </StripeCheckout> */}
-
                                                                               <StripeCheckout Checkout
                                                                                     amount={rooms.rentperday * totalDays * 100}
                                                                                     shippingAddress
@@ -209,12 +166,6 @@ const BookingScreen = ({ match }) => {
                                                                         </ListGroup>
                                                                   </Col>
                                                             </Row>
-
-                                                            {/* <Row>
-                                                                  <h6>Children's meal plan for guests staying at the hotel.</h6>
-                                                                  <p>The following children’s meal plan is applicable for all Golden Circle members. When accompanied by a dine-in adult, up to 2 children of registered in-house hotel guests at the age of 6 and below can enjoy buffet meals at the all-day dining venues at no additional charge. Additional children at the age of 6 and below and all children who are above 6 years of age but under 12 years of age will receive a 50% discount on the adult buffet price. Registered in-house hotel guests can also join Golden Circle at any time during their stay to enjoy the meal plan. Children of non-registered walk-in guests under the age of 12 will receive a 50% discount on buffet meals at the all-day dining outlets.</p>
-                                                            </Row> */}
-
 
                                                       </div>
 

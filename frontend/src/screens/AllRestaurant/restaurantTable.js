@@ -30,18 +30,18 @@ const RestaurantListScreen = () => {
 
     const deleteHandler = (id) => {
         if (Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
+            title: 'Confirm?',
+            text: "Cannot revert",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
+            confirmButtonText: 'Yes'
         }).then((result) => {
             if (result.isConfirmed) {
                 Swal.fire(
-                    'Deleted!',
-                    'Your file has been deleted.',
+                    'Successfully',
+                    'Deleted',
                     'success'
                 )
             }
@@ -63,7 +63,6 @@ const RestaurantListScreen = () => {
                         <Table class="table">
                             <thead class="table-light">
                                 <tr>
-                                    {/* <th>ID</th> */}
                                     <th>Name</th>
                                     <th>Type</th>
                                     <th>PhoneNo</th>
@@ -75,7 +74,6 @@ const RestaurantListScreen = () => {
                             <tbody>
                                 {restaurants.map(restaurant => (
                                     <tr key={restaurant._id}>
-                                        {/* <td>{restaurant._id}</td> */}
                                         <td>{restaurant.name}</td>
                                         <td>{restaurant.type}</td>
                                         <td>{restaurant.phoneNo}</td>

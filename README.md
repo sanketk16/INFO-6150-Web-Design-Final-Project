@@ -56,6 +56,10 @@ Implemented using ReactJS and Bootstrap components.
 
 APIs used in our project:
 
+JSON Web Tokens (JWT) for Authentication.
+
+Axios for handling external actions.
+
 Stripe API (test mode):
 Used as payment gateway for room booking by the user.
 

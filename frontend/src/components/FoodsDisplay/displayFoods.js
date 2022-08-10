@@ -12,7 +12,7 @@ const Food = ({ food }) => {
 
                   <Card.Body>
                         <Link to={`/food/${food._id}`}>
-                              <Card.Title as='div' style={{ color: "#daa520" }}><strong>{food.name}</strong></Card.Title>
+                              <Card.Title as='div' style={{ color: "#88ed91" }}><strong>{food.name}</strong></Card.Title>
                         </Link>
 
                         <Card.Text as='h3' style={{fontSize:"18px"}}>
