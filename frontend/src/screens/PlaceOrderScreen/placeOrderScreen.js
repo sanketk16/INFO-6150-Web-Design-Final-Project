@@ -63,7 +63,7 @@ const PlaceOrderScreen = ({ history }) => {
                 <ListGroup.Item>
                   <h2>Shipping</h2>
                   <p>
-                    <strong>Address:</strong>
+                    <strong>Address: </strong>
                     {cart.shippingAddress.address}, {cart.shippingAddress.city}{' '}
                     {cart.shippingAddress.postalCode},{' '}
                     {cart.shippingAddress.country}
@@ -107,7 +107,7 @@ const PlaceOrderScreen = ({ history }) => {
                             </Col>
                             <Col md={4}>
                               <b>
-                                {item.qty} x Rs.{item.price} = Rs.{item.qty * item.price}
+                                {item.qty} x USD {item.price} = USD {item.qty * item.price}
                               </b>
                             </Col>
                           </Row>
@@ -133,13 +133,13 @@ const PlaceOrderScreen = ({ history }) => {
                   <ListGroup.Item>
                     <Row>
                       <Col>Shipping</Col>
-                  <Col>USD.{cart.shippingPrice}</Col>
+                  <Col>USD {cart.shippingPrice}</Col>
                     </Row>
                   </ListGroup.Item>
                   <ListGroup.Item>
                     <Row>
                       <Col>Tax</Col>
-                  <Col>Rs.{cart.taxPrice}</Col>
+                  <Col>USD {cart.taxPrice}</Col>
                     </Row>
                   </ListGroup.Item>
                   <ListGroup.Item>
