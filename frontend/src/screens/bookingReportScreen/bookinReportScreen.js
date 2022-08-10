@@ -48,11 +48,11 @@ const BookinReportScreen = () => {
                                                       <center>  <h1 style={{ alignItems: 'center' }}>R O O M   B O O K I N G S</h1></center>
                                                       <br />
                                                       <tr>
-                                                            <th>NO</th>
-                                                            <th style={{ paddingLeft: '10px' }}>Room Name</th>
-                                                            <th style={{ paddingLeft: '10px' }}>From Date</th>
-                                                            <th style={{ paddingLeft: '10px' }}>To Date</th>
-                                                            <th style={{ paddingLeft: '10px' }}>Total Days</th>
+                                                            <th>Sr. No.</th>
+                                                            <th style={{ paddingLeft: '10px' }}>Room</th>
+                                                            <th style={{ paddingLeft: '10px' }}>Start Date</th>
+                                                            <th style={{ paddingLeft: '10px' }}>End Date</th>
+                                                            <th style={{ paddingLeft: '10px' }}>No. of days</th>
                                                             <th style={{ paddingLeft: '10px' }}>Charge</th>
                                                       </tr>
                                                       {bookings.map((book) => (
@@ -62,7 +62,7 @@ const BookinReportScreen = () => {
                                                                   <td style={{ paddingLeft: '10px' }}>{book.rooms}</td>
                                                                   <td style={{ paddingLeft: '10px' }}>{book.fromdate}</td>
                                                                   <td style={{ paddingLeft: '10px' }}>{book.todate}</td>
-                                                                  <center>  <td style={{ paddingLeft: '10px' }}>{book.totalDays}</td></center>
+                                                                  <center>  <td style={{ paddingLeft: '10px' }}>{Math.round(book.totalDays)}</td></center>
                                                                   <td style={{ paddingLeft: '10px' }}>{book.totalAmount}</td>
                                                                   <td>
                                                                         <p><b>Status</b>: {book.status === 'booked' ? (<Tag color="green">Confirmed</Tag>) : (<Tag color="red">Cancelled</Tag>)}</p>
@@ -73,7 +73,7 @@ const BookinReportScreen = () => {
 
                                                       ))}
                                                       <br></br>
-                                                      <h3>Total Number Of Rooms Booked: {tot}</h3>
+                                                      <h3>Total no. of bookings: {tot}</h3>
                                                 </PDFExport>
                                           </tbody>
                                     </Container>
