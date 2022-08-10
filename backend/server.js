@@ -8,7 +8,7 @@ import path from 'path'
 //routes
 import roomRoutes from './routes/roomsRoutes.js'
 import userRoutes from './routes/userRoutes.js'
-import restaurentsRoutes from './routes/restaurentRoutes.js'
+import restaurentsRoutes from './routes/restaurantRoutes.js'
 import weddingRoutes from './routes/weddingRoutes.js'
 import conferenceRoutes from './routes/conferenceRoutes.js'
 import conInsideRoutes from './routes/conInsideRoute.js'

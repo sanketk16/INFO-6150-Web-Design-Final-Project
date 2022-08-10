@@ -30,7 +30,7 @@ const connectDB = async () => {
             //       useCreateIndex: true
             // })
 
-            const conn = await mongoose.connect("mongodb+srv://sanketk:1234@cluster0.pism3.mongodb.net/hotel", {
+            const conn = await mongoose.connect(process.env.MONGO_URI || "mongodb+srv://sanketk:1234@cluster0.pism3.mongodb.net/hotel", {
                   useUnifiedTopology: true,
                   useNewUrlParser: true,
                   useCreateIndex: true

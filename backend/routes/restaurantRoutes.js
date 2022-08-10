@@ -1,6 +1,6 @@
 import express from 'express'
 const  router = express.Router()
-import { getRestaurents, getRestaurantById, createRestaurant, deleteRest, updateRestaurant  } from '../controllers/restaurentController.js'
+import { getRestaurents, getRestaurantById, createRestaurant, deleteRest, updateRestaurant  } from '../controllers/restaurantController.js'
 import { protect, admin } from '../middleware/authMiddleware.js'
 
 

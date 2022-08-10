@@ -1,15 +1,15 @@
-import Restaurent from '../models/restaurentModel.js'
+import Restaurant from '../models/restaurantModel.js'
 import asyncHandler from 'express-async-handler'
 
 
 const getRestaurents = asyncHandler(async (req, res) => {
-  const restaurents = await Restaurent.find({})
+  const restaurents = await Restaurant.find({})
   res.json(restaurents)
 })
 
 
 const getRestaurantById = asyncHandler(async (req, res) => {
-  const restaurant = await Restaurent.findById(req.params.id)
+  const restaurant = await Restaurant.findById(req.params.id)
 
   if (restaurant) {
     res.json({
@@ -45,7 +45,7 @@ const createRestaurant = asyncHandler(async (req, res) => {
     description
   } = req.body
 
-  const newrest = new Restaurent({
+  const newrest = new Restaurant({
     name,
     type,
     tables,
@@ -70,7 +70,7 @@ const createRestaurant = asyncHandler(async (req, res) => {
 
 
 const deleteRest = asyncHandler(async (req, res) => {
-  const rest = await Restaurent.findById(req.params.id)
+  const rest = await Restaurant.findById(req.params.id)
 
   if (rest) {
     await rest.remove()
@@ -97,7 +97,7 @@ const updateRestaurant = asyncHandler(async (req, res) => {
     description
   } = req.body
 
-  const restaurants = await Restaurent.findById(req.params.id)
+  const restaurants = await Restaurant.findById(req.params.id)
 
   if (restaurants) {
     restaurants.name = name,

@@ -1,7 +1,7 @@
 import asyncHandler from 'express-async-handler'
 import moment from 'moment'
 import Reservation from '../models/tableBookingModel.js'
-import Restaurant from '../models/restaurentModel.js'
+import Restaurant from '../models/restaurantModel.js'
 
 
 
