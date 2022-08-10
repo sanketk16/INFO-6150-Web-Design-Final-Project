@@ -23,7 +23,7 @@ const authUser = asyncHandler(async(req, res) => {
 })
 
 const registerUser = asyncHandler(async(req, res) => {
-    const { email, password } = req.body
+    const { name } = req.body
 
    const userExists = await User.findOne({ email })
 
