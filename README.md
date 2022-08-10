@@ -54,6 +54,29 @@ Implemented using MongoDb and Node JS.
 
 Implemented using ReactJS and Bootstrap components.
 
+Components Used:
+
+Navbar: Defines the navigation bar
+
+Footer: Defines the footer on the site
+
+CheckoutSteps: Defines the actions while checking out payment for order placed for  food product
+
+HallImages: Defines how event hall is displayed on the screen alongwith its carousel
+
+RestaurantImages: Defines how cuisine restaurants are displayed on the screen alongwith its carousel
+
+RoomCarousel: Defines how the rooms are displayed alongwith its carousel
+
+Search: The search component to find specific resaturant/dining or room.
+
+Loader: The loading component to display to user while something is loading.
+
+Message: The message component to display to user.
+
+
+
+
 APIs used in our project:
 
 JSON Web Tokens (JWT) for Authentication.
