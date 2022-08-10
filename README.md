@@ -7,7 +7,7 @@ Title - Bistro Lounges
 Shriya Dixit
 Shreya Gosrani
 Ayushi Patel
-Harshita Singh
+Harshita
 Sanket Khadke
 
 == Description == 
